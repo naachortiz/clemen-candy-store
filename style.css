@@ -18,6 +18,8 @@
     font-weight: bold; 
 }
 
+@import url('https://fonts.googleapis.com/css2? family= Tangerine & display=swap');
+
 body {
     font-family: 'Lato';
 }
@@ -43,8 +45,8 @@ div h3 a {
 }
 
 .header {
-background-color: #2A2F4F;
-padding: 30px 20px;
+    background-color: #2A2F4F;
+    padding: 50px;
 }
 
 .header__container {
