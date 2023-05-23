@@ -1,0 +1,51 @@
+.footer {
+    background-color: #FDF4F5;
+    color: black;
+    padding: 60px 20px;
+
+    &__container {
+        @extend .container;
+        @include templateGrid (1, 768px, 3);
+        @include container(1200px);
+
+        h4 {
+            color: black;
+            margin-bottom: 20px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        &-list {
+            padding: 0;
+            li {
+                margin: 10px 0;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+
+                    &:hover {
+                        color: #917FB3;
+                    }
+                }
+            }
+        }
+    }
+
+    &__copy {
+        margin-top: 40px;
+        text-align: center;
+        color: black;
+    }
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+
+@media (min-width: $bpSmall) {
+    .footer__copy {
+        grid-template-columns: 1fr;
+    }
+}

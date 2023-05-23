@@ -1,0 +1,134 @@
+.estampas {
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    &__cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+}
+
+.card {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+    width: 100%;
+
+    &__header {
+        img {
+            width: 324px;
+            height: 324px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            object-fit: cover;
+            width: 100%;
+        }
+    
+    &__description {
+        margin-bottom: 40px;
+    }
+
+    &__link {
+        background-color: #FDE2F3;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 15px 0;
+        border-radius: 10px;
+        width: 100%;
+        display: block;
+        text-align: center;
+
+        &:hover {
+            background-color: #917FB3;
+        }
+    }
+    }
+}
+
+.card__link {
+    background-color: #FDE2F3;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 0;
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.card__link:hover {
+    background-color: #917FB3;
+}
+
+
+@media (min-width: $bpSmall) {
+    .statistics__container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width:$bpMedium) {
+    .header__container-navbar {
+        display: flex;
+    }
+
+    .header__container-navbar-mobile {
+        display: none;
+    }
+
+    .hero__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .estampas__cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .etiquetas__cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width:$bpMedium) {
+    .header__container-navbar-mobile {
+        display: flex;
+    }
+
+    .estampas__cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .etiquetas__cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card__header img {
+        width: 100%;
+    }
+}
+
+@media (max-width:$bpSmall) {
+    .header__container-navbar-mobile {
+        display: flex;
+    }
+
+    .estampas__cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .etiquetas__cards {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+
+    .card__header img {
+        width: 100%;
+    }
+}
+

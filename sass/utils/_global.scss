@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../assests/ttf/Lato-Regular.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../assests/ttf/Lato-Bold.ttf');  
+    font-weight: bold; 
+}
+
+
+body {
+    font-family: 'Lato';
+}
+
+ul {
+    list-style-type: none;
+}
+
+p {
+    line-height: 1.5;
+}
+
+// extend
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@mixin container($value) {
+    max-width: $value;
+}
+
+// mixim 
+
+@mixin templateGrid ($colMobile, $bp, $colDesktop) {
+    display: grid;
+    grid-template-columns: repeat($colMobile, 1fr);
+    gap: 50px;
+
+    @media (min-width:$bp) {
+        grid-template-columns: repeat($colDesktop, 1fr);
+    }
+}
+
+@mixin templateFlex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+
+    @if($align == true) {
+        align-items: center;
+    }
+}

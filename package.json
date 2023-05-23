@@ -1,0 +1,14 @@
+{
+  "name": "preentrega2-ortiz",
+  "version": "1.0.0",
+  "description": "Este es un sitio de **Clemen Candy Bar**.",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "sass ./sass/main.scss ./css-2/main.css -w --no-source-map"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.62.1"
+  }
+}
