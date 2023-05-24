@@ -99,6 +99,10 @@
     }
 }
 
+.dropdown {
+    display: none;
+}
+
 @media (min-width: $bpSmall) {
     .statistics__container {
         flex-direction: row;
@@ -144,7 +148,12 @@
     .card__header img {
         width: 100%;
     }
+
+    .dropdown {
+        display: block;
+    }
 }
+
 
 @media (max-width:$bpSmall) {
     .header__container-navbar-mobile {
