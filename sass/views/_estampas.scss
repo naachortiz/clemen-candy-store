@@ -17,6 +17,11 @@
     padding: 20px;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
     width: 100%;
+    transition: all 0.3s;
+
+    &:hover {
+        transform: translateY(-15px);
+    }
 
     &__header {
         img {
@@ -65,7 +70,6 @@
 .card__link:hover {
     background-color: #917FB3;
 }
-
 
 @media (min-width: $bpSmall) {
     .statistics__container {

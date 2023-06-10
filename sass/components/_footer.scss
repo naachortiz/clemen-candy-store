@@ -31,21 +31,29 @@
             }
         }
     }
-
-    &__copy {
-        margin-top: 40px;
+    &_copy {
         text-align: center;
-        color: black;
     }
 }
 
 .logo a {
     text-decoration: none;
     color: black;
+
+    &:hover {
+        color: #E5BEEC;
+    }
 }
 
 @media (min-width: $bpSmall) {
     .footer__copy {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width:$bpMedium) {
+    .footer__copy {
+        grid-template-columns: none;
+        text-align: center;
     }
 }

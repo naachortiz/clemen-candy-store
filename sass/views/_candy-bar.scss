@@ -1,16 +1,12 @@
-main .cumple {
-    background-color: #DAEAF1;
+.background {
+    background-color: #E3F4F4;
 }
 
 .carrusel {
-    &-inner {
-        img {
-        width: 500px;
-        height: 200px;
-        width: 100%;
-        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
-        }
-    }
+    width: 52%;
+    max-width: 52%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 @media (min-width: $bpSmall) {
@@ -56,6 +52,10 @@ main .cumple {
     }
 
     .card__header img {
+        width: 100%;
+    }
+
+    .carrusel {
         width: 100%;
     }
 }

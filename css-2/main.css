@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -66,15 +67,16 @@ p {
 .footer__container-list li a:hover {
   color: #917FB3;
 }
-.footer__copy {
-  margin-top: 40px;
+.footer_copy {
   text-align: center;
-  color: black;
 }
 
 .logo a {
   text-decoration: none;
   color: black;
+}
+.logo a:hover {
+  color: #E5BEEC;
 }
 
 @media (min-width: 576px) {
@@ -82,6 +84,18 @@ p {
     grid-template-columns: 1fr;
   }
 }
+@media (min-width: 768px) {
+  .footer__copy {
+    grid-template-columns: none;
+    text-align: center;
+  }
+}
+.whatsapp {
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+}
+
 .header {
   background-color: #2A2F4F;
   padding: 50px;
@@ -93,11 +107,18 @@ p {
   justify-content: space-between;
   align-items: center;
 }
-.header__container a {
+.header__container h3 {
+  text-decoration: none;
+  color: #E5BEEC;
+  font-family: "Cormorant", serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+.header__container h3 a {
   color: #E5BEEC;
   text-decoration: none;
 }
-.header__container a:hover {
+.header__container h3 a:hover {
   color: #917FB3;
 }
 
@@ -144,6 +165,10 @@ p {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s;
+}
+.hero__container-image:hover {
+  transform: rotate(5deg);
 }
 
 .statistics {
@@ -244,6 +269,10 @@ p {
   padding: 20px;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
   width: 100%;
+  transition: all 0.3s;
+}
+.card:hover {
+  transform: translateY(-15px);
 }
 .card__header img {
   width: 324px;
@@ -405,15 +434,15 @@ main .fondo {
     width: 100%;
   }
 }
-main .cumple {
-  background-color: #DAEAF1;
+.background {
+  background-color: #E3F4F4;
 }
 
-.carrusel-inner img {
-  width: 500px;
-  height: 200px;
-  width: 100%;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+.carrusel {
+  width: 52%;
+  max-width: 52%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 @media (min-width: 576px) {
@@ -450,6 +479,9 @@ main .cumple {
     grid-template-columns: repeat(2, 1fr);
   }
   .card__header img {
+    width: 100%;
+  }
+  .carrusel {
     width: 100%;
   }
 }

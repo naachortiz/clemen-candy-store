@@ -9,16 +9,26 @@
         justify-content: space-between;
         align-items: center;
 
-        a {
-            color: #E5BEEC;
+        h3 {
             text-decoration: none;
+            color: #E5BEEC;
+            font-family: 'Cormorant', serif;
+            font-size: 40px;
+            font-weight: bold;
 
-            &:hover {
-                color: #917FB3;
+            a {
+                color: #E5BEEC;
+                text-decoration: none;
+
+                &:hover {
+                 color: #917FB3;
+                }
             }
         }
     }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,300&display=swap');
 
 .header__container-navbar {
     display: none;
@@ -68,6 +78,11 @@
             width: 100%;
             border-radius: 10px;
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+            transition: all 0.3s;
+
+            &:hover {
+                transform: rotate(5deg);
+            }
         }
         }
     }
